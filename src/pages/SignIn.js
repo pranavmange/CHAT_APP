@@ -28,30 +28,32 @@ const SignIn = () => {
     signInWithProvider(new firebase.auth.GoogleAuthProvider());
   };
 
-  <Container>
-    <Grid className="mt-page">
-      <Row>
-        <Col xs={24} md={12} mdOffset={6}>
-          <Panel>
-            <div className="text-center">
-              <h2>Welcome to Chat</h2>
-              <p>Progressive chat platform </p>
-            </div>
+  return (
+    <Container>
+      <Grid className="mt-page">
+        <Row>
+          <Col xs={24} md={12} mdOffset={6}>
+            <Panel>
+              <div className="text-center">
+                <h2>Welcome to Chat</h2>
+                <p>Progressive chat platform </p>
+              </div>
 
-            <div className="mt-3">
-              <Button block color="blue" onClick={onFacebookSignIn}>
-                <Icon icon="facebook" /> Continue with Facebook
-              </Button>
+              <div className="mt-3">
+                <Button block color="blue" onClick={onFacebookSignIn}>
+                  <Icon icon="facebook" /> Continue with Facebook
+                </Button>
 
-              <Button block color="green" onClick={onGoogleSignIn}>
-                <Icon icon="google" /> Continue with Google
-              </Button>
-            </div>
-          </Panel>
-        </Col>
-      </Row>
-    </Grid>
-  </Container>;
+                <Button block color="green" onClick={onGoogleSignIn}>
+                  <Icon icon="google" /> Continue with Google
+                </Button>
+              </div>
+            </Panel>
+          </Col>
+        </Row>
+      </Grid>
+    </Container>
+  );
 };
 
 export default SignIn;
