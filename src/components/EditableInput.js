@@ -12,7 +12,7 @@ const EditableInput = ({
   const [input, setInput] = useState(initialValue);
   const [isEditable, setIsEditable] = useState(false);
 
-  const onInputChange = useCallback((value) => {
+  const onInputChange = useCallback(value => {
     setInput(value);
   }, []);
 
@@ -26,8 +26,6 @@ const EditableInput = ({
 
     if (trimmed === '') {
       Alert.info(emptyMsg, 4000);
-
-      
     }
     if (trimmed !== initialValue) {
       await onSave(trimmed);
