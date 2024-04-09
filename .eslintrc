@@ -30,6 +30,7 @@
     "no-unused-vars": "warn",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
-    "eslint-plugin-import/no-extraneous-dependencies": "off"
+    "eslint-plugin-import/no-extraneous-dependencies": "off",
+    "no-constant-condition": "off"
   }
 }
